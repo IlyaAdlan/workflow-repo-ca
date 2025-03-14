@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["./node_modules/@types", "./test"]
+  },
+  "include": ["./test/**/*.ts", "./test/**/*.js"]
+}
