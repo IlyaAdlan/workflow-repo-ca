@@ -12,12 +12,7 @@ test('user can log in with valid credentials', async ({ page }) => {
 test('user sees error message with invalid credentials', async ({ page }) => {
   await page.goto('/login');
   await page.fill('#username', 'invalid');
-           await page.fill('#password', 'invalid');
+  await page.fill('#password', 'invalid');
   await page.click('button[type="submit"]');
-          await expect(page.locator('.error-message')).toBeVisible();
+  await expect(page.locator('.error-message')).toBeVisible();
 });
-
-dsa   dsad
-asdasd
-  dasdasd
-dsad sad   
