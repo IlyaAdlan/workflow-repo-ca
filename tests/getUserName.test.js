@@ -1,12 +1,11 @@
+/* eslint-disable no-undef */
 import { describe, test, expect, beforeEach, afterEach } from 'vitest';
 import { getUsername, saveToken } from '../js/utils/storage.js';
 
 describe('saveToken', () => {
   beforeEach(() => {
-    // Create a simple object to store our data
     const storage = {};
 
-    // Create mock versions of the localStorage methods we need
     global.localStorage = {
       setItem: (key, value) => (storage[key] = value),
       getItem: (key) => storage[key],

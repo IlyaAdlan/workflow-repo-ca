@@ -19,6 +19,7 @@
     "test": "readonly",
     "expect": "readonly",
     "describe": "readonly",
-    "beforeEach": "readonly"
+    "beforeEach": "readonly",
+    "localStorage": "readonly"
   }
 }
